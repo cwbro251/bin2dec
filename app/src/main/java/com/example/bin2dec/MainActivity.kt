@@ -23,4 +23,12 @@ class MainActivity : AppCompatActivity() {
         }
         return decimalNumber
     }
+    fun main(args: Array<String>) {
+        val num = 19
+
+        // converting decimal to binary
+        val binary = Integer.toBinaryString(num)
+        println("$num in decimal = $binary in binary")
+    }
+
 }
