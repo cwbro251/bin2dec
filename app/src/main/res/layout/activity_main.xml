@@ -14,6 +14,7 @@
         tools:layout_editor_absoluteY="-159dp">
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter The Decimal:"
@@ -28,23 +29,32 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="192dp"
+            android:layout_marginBottom="472dp"
             android:text="Convert"
-            tools:layout_editor_absoluteX="115dp"
-            tools:layout_editor_absoluteY="211dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
             android:layout_width="170dp"
             android:layout_height="0dp"
-            tools:layout_editor_absoluteX="154dp"
-            tools:layout_editor_absoluteY="130dp">
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/textView2">
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="170dp"
             android:layout_height="0dp"
-            tools:layout_editor_absoluteX="154dp"
-            tools:layout_editor_absoluteY="82dp">
+            android:layout_marginStart="154dp"
+            android:layout_marginBottom="26dp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="parent">
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,9 +62,11 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="126dp"
+            android:layout_marginBottom="19dp"
             android:text="Final Product"
-            tools:layout_editor_absoluteX="126dp"
-            tools:layout_editor_absoluteY="173dp" />
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
