@@ -1,1 +1,1 @@
-"# bin2dec" 
+# bin2d
