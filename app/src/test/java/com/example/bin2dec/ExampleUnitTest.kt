@@ -1,4 +1,4 @@
-package com.example.bin2dec
+package com.gunder.converter_decimaltobinary
 
 import org.junit.Test
 
